@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+    </head>
+<body>
+    <form action="submit.php" method="POST">
+        <div class="container">
+            <form id="registration-form">
+                <div class="form-group">
+                    <label for="name">
+                        <span class="icon">👤</span>
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="email">
+                        <span class="icon">📧</span>
+                        <input type="email" id="email" name="email" placeholder="Email ID" required>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="phone">
+                        <span class="icon">📞</span>
+                        <input type="tel" id="phone" name="phone" placeholder="Phone" pattern="[0-9]{10}" required>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="password">
+                        <span class="icon">🔒</span>
+                        <input type="password" id="password" name="password" placeholder="Set Password" required>
+                    </label>
+                </div>
+                <button type="submit">REGISTER</button>
+            </form>
+            <div id="message"></div>
+        </div>
+    </form>
+</body>
+</html>
